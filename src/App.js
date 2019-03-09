@@ -85,7 +85,7 @@ const App = () => {
     
     return (
       <div>
-        <h1>WhatsApp Converter</h1>
+        <h1>WhatsApp Chat Viewer</h1>
         <h2>Convert your WhatsApp exported chats to a viewable format</h2>
         <p>The chat content is not sent over the internet. So it's safe.</p>
         <div {...getRootProps()} className="drop-zone">

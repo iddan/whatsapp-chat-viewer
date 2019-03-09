@@ -37,7 +37,7 @@ const FileViewer = ({ files, fileName }) => {
 
 const Message = ({ message, author, date, files }) => {
   let fileName;
-  const result = message.match('<attached: (.+)>');
+  const result = message.trim().match(/<.+: (.+\..+)>/);
   if (result) {
     [,fileName] = result;
   }

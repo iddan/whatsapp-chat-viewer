@@ -35,7 +35,7 @@ article button {
   font-size: 24px;
 }
 
-@media print {
+/* @media print { */
   article {
     width: 100vw;
     min-height: 100vh;
@@ -43,8 +43,11 @@ article button {
     top: 0;
     left: 0;
     background: white;
+    z-index: 1000;
+    display: block;
+    box-sizing: border-box;
   }
-  article {
+  article button {
     display: none;
   }
-}
+/* } */
